@@ -49,9 +49,7 @@ int main(int argc, char* argv[])
 
     // Выведем отсортированные радиусы
     for (auto& curve : circles)
-    {
         cout << dynamic_cast<Circle*>(curve.get())->r << endl;
-    }
 
     double sum = 0;
     for (auto& c : circles) sum += dynamic_cast<Circle*>(c.get())->r;
